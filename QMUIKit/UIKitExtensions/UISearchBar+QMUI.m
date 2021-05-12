@@ -80,7 +80,7 @@ QMUISynthesizeCGFloatProperty(qmuisb_centerPlaceholderCachedWidth2, setQmuisb_ce
                 } else {
                     searchBar = (UISearchBar *)selfObject.superview.superview;
                 }
-                NSAssert(!searchBar || [searchBar isKindOfClass:UISearchBar.class], @"Can not find UISearchBar from cancelButton");
+                //NSAssert(!searchBar || [searchBar isKindOfClass:UISearchBar.class], @"Can not find UISearchBar from cancelButton");
                 if (searchBar.qmui_alwaysEnableCancelButton && !searchBar.qmui_searchController) {
                     firstArgv = YES;
                 }
