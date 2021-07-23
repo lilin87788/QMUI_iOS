@@ -264,7 +264,7 @@ QMUISynthesizeIdStrongProperty(qmui_interactiveGestureDelegator, setQmui_interac
                 
                 // UINavigationController 不可见时 return 值可能为 nil
                 // https://github.com/Tencent/QMUI_iOS/issues/1180
-                NSAssert(result && disappearingViewControllers && disappearingViewControllers.firstObject == result, @"QMUI 认为 popViewController 会成功，但实际上失败了");
+                //NSAssert(result && disappearingViewControllers && disappearingViewControllers.firstObject == result, @"QMUI 认为 popViewController 会成功，但实际上失败了");
                 disappearingViewControllers = result ? @[result] : disappearingViewControllers;
                 
                 [selfObject setQmui_navigationAction:QMUINavigationActionDidPop animated:animated appearingViewController:appearingViewController disappearingViewControllers:disappearingViewControllers];
